@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
-  resources :pages do
-    member do
-      get :home
-      get :show
-    end
-  end
+  get '/pages/show', to: 'pages#show', as: "index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

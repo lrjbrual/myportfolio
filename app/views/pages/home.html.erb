@@ -1,17 +1,10 @@
-<div class="banner" >
-  <div class="banner-content" style="position: absolute; top: 200px; text-align: center; left: 0; right: 0; buttom: 0; z-index: 2; ">
-    <form action="#" class="form-inline">
-      <!-- <input type="text" class="form-control input-lg" placeholder="checkin">
-      <input type="text" class="form-control input-lg" placeholder="checkout">
-      <select name id class="form-control input-lg">
-        <option value="1">1 person</option>
-        <option value="2">2 persons</option>
-        <option value="3">3 persons</option>
-      </select> -->
-    </form>
-    <h1 class="titleh1">Discover my world</h1>
-    <input type="submit" class="btn btn-primary btn-lg" value="Start">
-  </div>
-  <%= video_tag "banner-video.mp4", autoplay: :autoplay, loop: :loop, id:"bgvid", style: "height:100%; object-fit: cover;", type: "video/mp4" %>
-</div>
 <%= render partial: 'layouts/mainnav' %>
+<div class="banner" >
+  <div class="banner-content banner-title">
+    <h1 class="titleh1">Discover my world</h1>
+  </div>
+  <div class="banner-botton">
+    <%= link_to 'Start', index_path, class: "btn waves-effect waves-yellow deep-orange darken-1 btn-large" %>
+  </div>
+  <%= video_tag "banner-video.mp4", autoplay: :autoplay, loop: :loop, id:"bgvid", class: "responsive-video", style: "height:100%; object-fit: cover;", type: "video/mp4" %>
+</div>

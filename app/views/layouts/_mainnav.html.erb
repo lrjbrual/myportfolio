@@ -1,14 +1,35 @@
 <ul id="slide-out" class="side-nav">
-  <li><div class="userView">
-    <img class="background" src="images/office.jpg">
-    <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-    <a href="#!name"><span class="white-text name">John Doe</span></a>
-    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-  </div></li>
-  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-  <li><a href="#!">Second Link</a></li>
-  <li><div class="divider"></div></li>
-  <li><a class="subheader">Subheader</a></li>
-  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  <li>
+    <div class="userView">
+      <%= image_tag("banner-nav.jpeg", class:"background")  %>
+      <%= image_tag("rjay.jpg", class:"circle")  %>
+      <span class="white-text name">Ryan Jeff Brual, MBA</span>
+      <a href="mailto:lrjbrual@lrjbrual.com?Subject=My%email%for%you" target="_top">
+        <span class="white-text email">lrjbrual@lrjbrual.com</span>
+      </a>
+    </div>
+  </li>
+    <li>
+      <h6 class="mainquote">&nbsp;&nbsp;&nbsp;It is not just a coding but it is innovating</h6>
+    </li>
+    <li><div class="divider"></div></li>
+    <li>
+      <p class="introabout">
+        I am a mentor & professor of Master's degree in Business Administration.
+        And Fullstack Ruby on Rails Web Developer with almost 9 Years of Information Technology experience.
+        <%= link_to index_path, class: "waves-effect waves-teal btn-flat" do %>
+          <i class="material-icons right">send</i>More About Me..
+        <% end %>
+      </p>
+    </li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Menu</a></li>
+    <li><a href="#" class="waves-effect waves-teal"><i class="small material-icons left">assignment</i>Projects<span class="badge" data-badge-caption="projects">4</span></a></li>
+    <li><a href="#" class="waves-effect waves-teal"><i class="small material-icons left">mode_edit</i>Articles</a></li>
+    <li><a href="#" class="waves-effect waves-teal"><i class="small material-icons left">library_books</i>Learn</a></li>
+    <li><a href="#" class="waves-effect waves-teal"><i class="small material-icons left">shop</i>My Products</a></li>
+    <li><div class="divider"></div></li>
 </ul>
-<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+<a href="#" data-activates="slide-out" class="btn-floating button-collapse btn-large light-blue darken-3">
+  <i class="material-icons">menu</i>
+</a>

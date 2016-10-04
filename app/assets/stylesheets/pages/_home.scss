@@ -2,3 +2,24 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+h1.titleh1{
+  position: absolute;
+  top: 260px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  buttom: 0;
+  z-index: 2;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5em;
+  box-shadow: 10px 10px 55px -17px rgba(0,0,0,0.75);
+}
+.banner-botton{
+  position: absolute;
+  top: 350px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  buttom: 0;
+  z-index: 2;
+}

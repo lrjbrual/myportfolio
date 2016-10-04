@@ -3,15 +3,19 @@
 @import "config/variables";
 @import "config/bootstrap_variables";
 
+// Google fonts
+@import 'https://fonts.googleapis.com/css?family=Lalezar';
+@import 'https://fonts.googleapis.com/css?family=Dancing+Script:700';
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+
 // External libraries
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
 // CSS
-@import "layout/index";
-@import "components/index";
-@import "pages/index";
-@import "vendor/index";
+@import "pages/home";
+@import "pages/show";
+@import "layout/mainnav";
 
 // Videos
 @import "videos/videos";

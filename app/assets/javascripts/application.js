@@ -10,3 +10,9 @@ $('.button-collapse').sideNav({
     }
   );
   $('.collapsible').collapsible();
+
+$(document).ready(function(){
+    $('.parallax').parallax();
+     $('ul.tabs').tabs();
+    //  $('ul.tabs').tabs('select_tab', 'tab_id');
+  });
