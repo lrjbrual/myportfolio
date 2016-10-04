@@ -14,5 +14,8 @@ $('.button-collapse').sideNav({
 $(document).ready(function(){
     $('.parallax').parallax();
      $('ul.tabs').tabs();
+         $('.modal-trigger').leanModal();
+         $('#modal1').closeModal();
+         $('.slider').slider({full_width: true});
     //  $('ul.tabs').tabs('select_tab', 'tab_id');
   });

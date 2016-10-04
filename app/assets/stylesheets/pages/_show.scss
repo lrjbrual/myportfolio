@@ -10,9 +10,6 @@
  justify-content: center;
  align-items: center;
 }
-// .parallax-container{
-//   height: 400px;
-// }
 .about-me{
   text-align: justify;
   z-index: 20;
@@ -26,6 +23,9 @@
     box-sizing: border-box;
     min-height: 1px;
 }
+.mytagname{
+  font-family: 'Exo', sans-serif;
+}
 #hiddenmenu {
 	position: fixed;
   top: 0;
@@ -38,15 +38,68 @@
   top: 0;
   position:relative;
   z-index:5;
-  height: 400px;
+  height: 380px;
   }
 #content {
   // padding-top: 80px;
   position:relative;
-  background-color: yellow;
 	width: 100%;
   // z-index: auto;
   }
+.margin-row{
+  margin-top: 30px;
+}
 ul.li{
   float:right;
+}
+ //Play time
+ .contain {
+  margin: 100px;
+}
+
+.cir {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+
+  .contain:hover & {
+    transform: translateX(200px);
+  }
+}
+
+.cir0 {
+  @extend .cir;
+  background: PaleTurquoise;
+  transition: all 1.5s linear;
+}
+
+.cir1 {
+  @extend .cir;
+  background: salmon;
+  transition: all 1.5s ease;
+}
+
+.cir2 {
+   @extend .cir;
+  background: lightskyblue;
+  transition: all 1.5s ease-in;
+}
+
+.cir3 {
+  @extend .cir;
+  background: khaki;
+  transition: all 1.5s ease-out;
+}
+
+.cir4 {
+  @extend .cir;
+  background: mediumturquoise;
+  transition: all 1.5s ease-in-out;
+}
+
+.cir5 {
+  @extend .cir;
+  background: thistle;
+  transition: all 1.5s cubic-bezier(0,1,.98,0);
 }

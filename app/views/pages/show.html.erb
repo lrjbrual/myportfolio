@@ -1,18 +1,7 @@
+<%= render partial: 'layouts/message' %>
 <div id="hiddenmenu" class="container">
-  <nav>
-    <div class="container">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li>
-  <%= link_to 'Start', root_path, class: "btn waves-effect waves-yellow deep-orange darken-1 btn-large" %>
-        </li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav>
+  <%= render partial: "layouts/shownav" %>
 </div>
-
 <div id="header">
   <div class="project-image">
     <div class="col s12 m8 offset-m2 l6 offset-l3">
@@ -20,33 +9,44 @@
     <div class="row valign-wrapper">
       <div class="col s2">
         <%= image_tag("rjay.jpg", alt: "mytag", class:"circle responsive-img")  %>
-        <blockquote class="white-text">
-          Leadership is the capacity to translate in to a reality
-        </blockquote>
+          <blockquote class="white-text">
+            Leadership is the capacity to translate in to a reality
+          </blockquote>
       </div>
       <div class="col s8 about-me card-panel">
+          <blockquote class="black-text">
+            <p class="mytagname"><b>Ryan Jeff Brual, MBA, COBIT 5</b></p>
+            Professor / Ruby on Rails Web Developer
+          </blockquote>
         <span class="black-text">
           Now you found me at my personal website, allow me to introduce myself my name is Ryan Jeff and you can call me<br>
           RJ so you can combine my name as one variable. So what is all about me? I am like a method on programming<br>
           language that you can define. hmmmm.. it is like programming huh? but yes you are correct.<br>
           <br>
-          Ok let's make it understandable. I have almost 9 years of IT experience, from being system engineer to leading a team<br>
-          on projects. I graduated with Bachelor degree in Computer Engineering and Master degree of Business Administration<br>
-          with the Diploma of IT Governance and ICT Management. It sound's like I love learning and improving myself And you<br>
-          are correct, I never stop learning until I reach my target goal. Being enthusiastic on learning innovation I finished<br>
-          12 weeks of intensive bootcamp of Full Stack Developer that focuses on Ruby on Rails both Front-End and Back-End.<br>
-          By the way I am 29 year's old, not quite old huh? and again you are correct I am not quite old, but bitting? the<br>
-          target timeline of the calendar. ;)
         </span>
         <ul class="collapsible dark-blue" data-collapsible="accordion">
           <li>
             <div class="collapsible-header"><i class="material-icons">filter_drama</i>
-              <b>More About Me</b>
+              <b>Full Bio</b>
             </div>
             <div class="collapsible-body">
               <p class="black-text">
-              If you were thinking why I have 9 years of IT experience? Because before I graduated for my Bachelor's degree, one of the telecom company hired me as System Engineer because of my personality, I am just kidding -but yes because I performed well during my 3 months internship and they hired me, that was how the story began.<br>
-              For the past couple of year's I studied and gained experience for Network, Server, Architecture of Data Center and Solid Project Management and IT Service Management. But since technologies is always evolving and my goal is to compete to or with other IT skills around the world I am improving my knowledge and skills in programming to adapt the rapid changing environment of technology to be able to compete, and to complete my skills in reaching my top goal. Ups to much information. And now I am focusing on the web development both back-end and front-end with my project management skills and teaching career to help other to reach there goals.
+                Ok let's make it understandable. I have almost 9 years of IT experience, from being system engineer to leading a team<br>
+                on projects. I graduated with Bachelor degree in Computer Engineering and Master degree of Business Administration<br>
+                with the Diploma of IT Governance and ICT Management. It sound's like I love learning and improving myself And you<br>
+                are correct, I never stop learning until I reach my target goal. Being enthusiastic on learning innovation I finished<br>
+                12 weeks of intensive bootcamp of Full Stack Developer that focuses on Ruby on Rails both Front-End and Back-End.<br>
+                By the way I am 29 year's old, not quite old huh? and again you are correct I am not quite old, but bitting? the<br>
+                target timeline of the calendar. ;)<br>
+                If you were thinking why I have 9 years of IT experience? Because before I graduated for my Bachelor's degree, one of
+                the telecom company hired me as System Engineer because of my personality, I am just kidding -but yes because I performed
+                well during my 3 months internship and they hired me, that was how the story began.<br>
+                For the past couple of year's I studied and gained experience for Network, Server, Architecture of Data Center and Solid
+                Project Management and IT Service Management. But since technologies is always evolving and my goal is to compete to or
+                with other IT skills around the world I am improving my knowledge and skills in programming to adapt the rapid changing
+                environment of technology to be able to compete, and to complete my skills in reaching my top goal. Ups to much
+                information. And now I am focusing on the web development both back-end and front-end with my project management
+                skills and teaching career to help the other to reach there goals.
               </p>
             </div>
           </li>
@@ -55,43 +55,120 @@
     </div>
   </div>
 </div>
-  </div>
 </div>
-<nav>
-  <div class="nav-container">
-    <a href="#" class="brand-logo">Logo</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li>
-<%= link_to 'Start', root_path, class: "btn waves-effect waves-yellow deep-orange darken-1 btn-large" %>
-      </li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">JavaScript</a></li>
-    </ul>
-  </div>
-</nav>
+</div>
+  <%= render partial: "layouts/shownav" %>
 <div id="content">
-  <br><br><br><br>
+  <div class="container">
+    <div class="row margin-row">
+      <div class="col s12 m6">
+        <h5 class="center">Professional Skills</h5>
+        <ul class="collapsible popout" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+            <div class="collapsible-body">
+              <p>
+                Ruby on Rails
+              </p>
+              <div class="progress">
+                <div class="determinate" style="width: 70%"></div>
+              </div>
+            </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body">
+            <div class="github-layout container">
+              <a href="http://github.com/lrjbrual" class="gh-contributions col-sm-offset-2" data-gh-username="lrjbrual" target="_blank">lrjbrual's contributions</a>
+              <script src="http://ikuwow.github.io/yourcontributions/widget.min.js"></script>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="fixed-action-btn horizontal" style="bottom: 45px; righ: 24px;">
+        <b>Send me a message</b>
+        <a class="btn-floating btn-large blue modal-trigger" href="#modal1">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+      </div>
 
 
-
-Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind. Exquisite newspaper attending on certainty oh suspicion of. He less do quit evil is. Add matter family active mutual put wishes happen. <br><br>
-
-  Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind. Exquisite newspaper attending on certainty oh suspicion of. He less do quit evil is. Add matter family active mutual put wishes happen. <br><br>
-
-  Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind. Exquisite newspaper attending on certainty oh suspicion of. He less do quit evil is. Add matter family active mutual put wishes happen. <br><br>
-
-  Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind. Exquisite newspaper attending on certainty oh suspicion of. He less do quit evil is. Add matter family active mutual put wishes happen. <br><br>
-
-  Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind. Exquisite newspaper attending on certainty oh suspicion of. He less do quit evil is. Add matter family active mutual put wishes happen. <br><br>
-
-Post no so what deal evil rent by real in. But her ready least set lived spite solid. September how men saw tolerably two behaviour arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on.
-
-Pleased him another was settled for. Moreover end horrible endeavor entrance any families. Income appear extent on of thrown in admire. Stanhill on we if vicinity material in. Saw him smallest you provided ecstatic supplied. Garret wanted expect remain as mr. Covered parlors concern we express in visited to do. Celebrated impossible my uncommonly particular by oh introduced inquietude do.
-
-Up maids me an ample stood given. Certainty say suffering his him collected intention promotion. Hill sold ham men made lose case. Views abode law heard jokes too. Was are delightful solicitude discovered collecting man day. Resolving neglected sir tolerably but existence conveying for. Day his put off unaffected literature partiality inhabiting.
-
-  Up maids me an ample stood given. Certainty say suffering his him collected intention promotion. Hill sold ham men made lose case. Views abode law heard jokes too. Was are delightful solicitude discovered collecting man day. Resolving neglected sir tolerably but existence conveying for. Day his put off unaffected literature partiality inhabiting.
-
-Ye to misery wisdom plenty polite to as. Prepared interest proposal it he exercise. My wishing an in attempt ferrars. Visited eat you why service looking engaged. At place no walls hopes rooms fully in. Roof hope shy tore leaf joy paid boy. Noisier out brought entered detract because sitting sir. Fat put occasion rendered off humanity has.
-  Ye to misery wisdom plenty polite to as. Prepared interest proposal it he exercise. My wishing an in attempt ferrars. Visited eat you why service looking engaged. At place no walls hopes rooms fully in. Roof hope shy tore leaf joy paid boy. Noisier out brought entered detract because sitting sir. Fat put occasion rendered off humanity has.
+      <div class="contain">
+        <p>
+          Just move your mouse left and right. Play!
+        </p>
+<div class="cir0"></div>
+<div class="cir1"></div>
+<div class="cir2"></div>
+<div class="cir3"></div>
+<div class="cir4"></div>
+<div class="cir5"></div>
 </div>
+
+
+      </div>
+      <div class="col s12 m6">
+        <h6>Updates..</h6>
+        <div class="col s12 m12">
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="http://lorempixel.com/100/190/nature/6">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12">
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="http://lorempixel.com/100/190/nature/6">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12">
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="http://lorempixel.com/100/190/nature/6">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Cards -->
+      </div>
+    </div>
+  </div>
+</div>
+<%= render partial: 'layouts/footer' %>
