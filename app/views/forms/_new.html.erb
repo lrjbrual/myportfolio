@@ -1,0 +1,28 @@
+<div id="modal1" class="modal bottom-sheet">
+  <div class="modal-content col s12 m8 l6">
+    <h6>Send me a message then I will get back to you within 48hours</h6>
+    <%= form_for :form, url: forms_path do |f| %>
+      <form class="col s12 m8 center">
+             <div class="input-field col s8 m8 l6">
+               <%= f.text_field :name, required:true, id:"name", type:"text", class: "validate" %>
+               <%= f.label :full_name, for:"name", required: true   %>
+             </div>
+              <div class="input-field col s8 m8 l6">
+                <%= f.email_field :email, required:true, id: "email", type: "email", class:"validate" %>
+                <%= f.label :your_email, for: "Email" %>
+              </div>
+             <div class="input-field col s8 m8 l6">
+               <%= f.text_field :message, required:true, id: "textarea1", class:"materizalize-textarea"%>
+               <%= f.label :type_your_message, for: "textarea1" %>
+             </div>
+            <div class="hidden">
+              <%= f.label :nickname %><br>
+              <%= f.text_field :nickname, hint: 'leave this blanck' %>
+            </div>
+            <div class="modal-footer">
+              <%= f.submit 'Send Message', class:"waves-effect waves-light btn orange accent-2"%>
+            </div>
+      </form>
+  </div>
+  <% end %>
+</div>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root to: 'pages#home'
   # get '/pages/show', to: 'pages#show', as: "index"
 
@@ -7,4 +8,5 @@ Rails.application.routes.draw do
     get 'show'
     get 'projects'
   end
+  	resources :forms, only: [:new, :create]
 end
