@@ -4,9 +4,6 @@
       <%= image_tag("banner-nav.jpeg", class:"background")  %>
       <%= image_tag("rjay.jpg", class:"circle")  %>
       <span class="white-text name">Ryan Jeff Brual, MBA</span>
-      <a href="mailto:lrjbrual@lrjbrual.com?Subject=My%email%for%you" target="_top">
-        <span class="white-text email">lrjbrual@lrjbrual.com</span>
-      </a>
     </div>
   </li>
     <li>
@@ -23,8 +20,14 @@
       </p>
     </li>
     <li><div class="divider"></div></li>
-    <li><a class="subheader">Menu</a></li>
-    <li><a href="#" class="waves-effect waves-teal"><i class="small material-icons left">assignment</i>Projects<span class="badge" data-badge-caption="projects">4</span></a></li>
+    <li>
+      <a class="subheader">Menu</a>
+    </li>
+    <li>
+      <%= link_to pages_projects_path, class: "waves-effect waves-teal" do %>
+        <i class="small material-icons left">assignment</i>Projects<span class="badge" data-badge-caption="projects">4</span>
+      <% end %>
+    </li>
     <li><a href="#" class="waves-effect waves-teal"><i class="small material-icons left">mode_edit</i>Articles</a></li>
     <li><a href="#" class="waves-effect waves-teal"><i class="small material-icons left">library_books</i>Learn</a></li>
     <li><a href="#" class="waves-effect waves-teal"><i class="small material-icons left">shop</i>My Products</a></li>

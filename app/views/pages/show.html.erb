@@ -4,7 +4,7 @@
 </div>
 <div id="header">
   <div class="project-image">
-    <div class="col s12 m8 offset-m2 l6 offset-l3">
+    <div class="col s12 m10 offset-m2 l6 ">
   <div class="z-depth-1">
     <div class="row valign-wrapper">
       <div class="col s2">
@@ -17,6 +17,7 @@
           <blockquote class="black-text">
             <p class="mytagname"><b>Ryan Jeff Brual, MBA, COBIT 5</b></p>
             Professor / Ruby on Rails Web Developer
+            <%= render partial: 'layouts/linkedin' %>
           </blockquote>
         <span class="black-text">
           Now you found me at my personal website, allow me to introduce myself my name is Ryan Jeff and you can call me<br>
@@ -63,64 +64,28 @@
     <div class="row margin-row">
       <div class="col s12 m6">
         <h5 class="center">Professional Skills</h5>
-        <ul class="collapsible popout" data-collapsible="accordion">
-        <li>
-          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-            <div class="collapsible-body">
-              <p>
-                Ruby on Rails
-              </p>
-              <div class="progress">
-                <div class="determinate" style="width: 70%"></div>
-              </div>
-            </div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-          <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-          <div class="collapsible-body">
-            <div class="github-layout container">
-              <a href="http://github.com/lrjbrual" class="gh-contributions col-sm-offset-2" data-gh-username="lrjbrual" target="_blank">lrjbrual's contributions</a>
-              <script src="http://ikuwow.github.io/yourcontributions/widget.min.js"></script>
-            </div>
-          </div>
-        </li>
-      </ul>
+        <%= render partial: 'layouts/professionalskills' %>
       <div class="fixed-action-btn horizontal" style="bottom: 45px; righ: 24px;">
         <b>Send me a message</b>
         <a class="btn-floating btn-large blue modal-trigger" href="#modal1">
           <i class="large material-icons">mode_edit</i>
         </a>
       </div>
-
-
+      <!-- For fun -->
       <div class="contain">
         <p>
           Just move your mouse left and right. Play!
         </p>
-<div class="cir0"></div>
-<div class="cir1"></div>
-<div class="cir2"></div>
-<div class="cir3"></div>
-<div class="cir4"></div>
-<div class="cir5"></div>
-</div>
-
-
+        <div class="cir0 center">1</div>
+        <div class="cir1 center">2</div>
+        <div class="cir2 center">3</div>
+        <div class="cir3 center">4</div>
+        <div class="cir4 center">5</div>
+        <div class="cir5 center">6</div>
+      </div>
       </div>
       <div class="col s12 m6">
-        <h6>Updates..</h6>
+        <h6>Latest Updates..</h6>
         <div class="col s12 m12">
           <div class="card horizontal">
             <div class="card-image">
