@@ -4,39 +4,46 @@
 
    <ul class="slides">
      <li>
-       <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+       <%= image_tag("book1.jpg", alt: "book1", class: "project-opacity responsive-img") %>
        <div class="caption center-align">
-         <h3>This is our big Tagline!</h3>
-         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         <h3>Launch soon at Amazon Book store on November 2016</h3>
+         <h6 class="light grey-text text-lighten-3">This book deal with the issues and mechanics of startup new ventures<br>
+            includes analytical processes, technology strategy, and financing sources and strategy planning.
+         </h6>
        </div>
      </li>
      <li>
-       <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+       <%= image_tag("kardoesie.jpg", alt: "kardoesie", class: "project-opacity responsive-img") %>
        <div class="caption left-align">
-         <h3>Left Aligned Caption</h3>
-         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         <h3>The Startup Online shopping business</h3>
+         <h5 class="light grey-text text-lighten-3">Owner: Blom's Family</h5>
+         <h4><a href="http://kardoesie.nl" target="_blank">Website Link</a></h4>
        </div>
      </li>
      <li>
-       <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+       <%= image_tag("netstarted.jpg", alt: "netstarted", class: "project-opacity responsive-img") %>
        <div class="caption right-align">
-         <h3>Right Aligned Caption</h3>
-         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+         <h3>The solutions for Startup Company</h3>
+         <h5 class="light grey-text text-lighten-3">We design, develop, and launch your idea by: Netstarted Team</h5>
+         <h4><a href="http://netstarted.com" target="_blank">Website Link</a></h4>
        </div>
      </li>
      <li>
-       <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
-       <div class="caption center-align">
-         <h3>This is our big Tagline!</h3>
-         <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      <%= image_tag("12restaurants.jpg", alt: "12restaurants", class: "project-opacity responsive-img") %>
+       <div class="caption left-align">
+         <h3>The solutions for empty table</h3>
+         <h5 class="light grey-text text-lighten-3">Now nothing is impossible to get your customer to fill your empty table</h5>
+         <h4><a href="http://12restaurants.com" target="_blank">Website Link</a></h4>
+       </div>
+     </li>
+     <li>
+      <%= image_tag("blog.jpg", alt: "blog", class: "project-opacity responsive-img") %>
+       <div class="caption left-align">
+         <h3>Florence city blogging</h3>
+         <h5 class="light grey-text text-lighten-3">My First blog created using Ruby on Rails</h5>
+         <h4><a href="http://florenceblogapp.herokuapp.com" target="_blank">Website Link</a></h4>
        </div>
      </li>
    </ul>
-
-   <div class="fixed-action-btn horizontal" style="bottom: 45px; righ: 24px;">
-     <b><u>Send me a message</u></b>
-     <a class="btn-floating btn-large blue modal-trigger" href="#modal1">
-       <i class="large material-icons">mode_edit</i>
-     </a>
-   </div>
+   <%= render partial: 'layouts/emailwrite' %>
  </div>

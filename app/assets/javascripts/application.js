@@ -16,6 +16,9 @@ $(document).ready(function(){
      $('ul.tabs').tabs();
          $('.modal-trigger').leanModal();
          $('#modal1').closeModal();
-         $('.slider').slider({full_width: true});
+         $('.slider').slider({
+           full_width: true,
+           interval: 10000
+         });
     //  $('ul.tabs').tabs('select_tab', 'tab_id');
-  });
+});
