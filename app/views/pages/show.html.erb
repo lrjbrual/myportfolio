@@ -1,19 +1,20 @@
 <%= render partial: 'forms/new' %>
 <div id="hiddenmenu" class="container">
-  <%= render partial: "layouts/shownav" %>
+  <%= render partial: "layouts/shownav"%>
 </div>
+<div class="clear"></div>
 <div id="header">
-  <div class="project-image">
+  <div class="project-image responsive-img">
     <div class="col s12 m10 offset-m1 l6 ">
       <div class="center valign-wrapper">
         <div class="row">
-            <div class="col s12 m2">
-              <img alt="mytag" class="circle responsive-img" src="/assets/rjay-9d38e57c95780bf80ad777c9ee485acc5272ef10943ab9a7a2a2b8edc5346b98.jpg" />
+            <div class="col s10 m2 offset-m1 offset-s1">
+              <%= image_tag "rjay.jpg", alt:"mytag", class: "image-padding circle responsive-img" %>
                 <blockquote class="white-text">
                   Leadership is the capacity to translate in to a reality
                 </blockquote>
             </div>
-            <div class="col s12 m10 about-me card-panel">
+            <div class="col s10 m9  offset-s1 about-me card-panel">
                 <blockquote class="black-text">
                   <p class="mytagname"><b>Ryan Jeff Brual, MBA, COBIT 5</b></p>
                   Professor / Ruby on Rails Web Developer
@@ -64,23 +65,17 @@
   <%= render partial: "layouts/shownav" %>
 <div class="clear"></div>
 <div id="content">
-  <div class="wrapper">
+  <div class="wrapper layout-padding">
     <div class="row margin-row">
       <div class="col s12 m6">
         <h5 class="center">Professional Skills</h5>
         <%= render partial: 'layouts/professionalskills' %>
-        <div class="contain center">
-          <p>
-            Just move your mouse left and right. Play!
-          </p>
-          <div class="cir0 center">1</div>
-          <div class="cir1 center">2</div>
-          <div class="cir2 center">3</div>
-          <div class="cir3 center">4</div>
-          <div class="cir4 center">5</div>
-          <div class="cir5 center">6</div>
+        <br>
+
+        <div class=" center">
+          <h6><b>My Latest Video Tutorial</b></h6>
+            <iframe height="280"  class="col s10 m8 offset-s1 offset-m3 responsive-video center" src="https://www.youtube.com/embed/A4pv_NZV2XA" frameborder="0" allowfullscreen></iframe>
         </div>
-      <!-- For fun -->
       </div>
       <div class="col s12 m6">
         <%= render partial: 'layouts/projectcards' %>
